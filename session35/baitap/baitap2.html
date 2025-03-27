@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .add {
+    margin-left: 100px;
+    background-color: rgb(5, 10, 85);
+    color: #fff;
+    width: 400px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item {
+    background-color: black;
+    color: #fff;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+
+  .content {
+    display: flex;
+    gap: 20px;
+    width: 650px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    position: relative;
+    left: 45px;
+    bottom: 10px;
+  }
+
+  .btn1 {
+    margin-bottom: 50px;
+    margin-left: 550px;
+  }
+
+  .content1 {
+    background-color: #7b59b0;
+    color: #fff;
+    height: 50px;
+    width: 600px;
+  }
+
+  .span {
+    font-size: 24px;
+  }
+
+  .content2 {
+    background-color: #fff;
+    width: 600px;
+    height: 200px;
+ 
+  }
+ .hide{
+  display: none;
+ }
+  .show{
+    display: block;
+  }
+</style>
+
+<body>
+ 
+  <div style="background-image: url(./img/1.jpg);height: 700px;">
+    <div style="justify-self: center;">
+      <div>
+        <div class="add">
+          <h1 class="h1" onclick="show()">ADD BOOKMARK</h1>
+        </div><br><br>
+        <div class="content" id="div">
+          <!-- <div class="item">
+          <span>Google-Adffggdhdjfjdj</span>
+          <button class="btn">x</button>
+        </div> -->
+        </div>
+      </div>
+      <div id="container">
+        <div class="content1">
+          <span class="span">Add Bookmark</span><button class="btn1" onclick="hide()">x</button>
+        </div>
+        <div class="content2">
+          <div style="margin-left: 10px;">
+            <span style="color: #7b59b0;"><br>
+              Website Name <br>
+              <input id="name" style="width: 550px;border-radius: 4px;border: 3px solid violet;" type="text"><br><br>
+            </span>
+            <span style="color: #7b59b0;">
+              Website URL <br>
+              <input id="url" style="width: 550px;border-radius: 4px;border: 3px solid violet;" type="text">
+            </span><br><br>
+            <button
+              style="background-color: #7b59b0;border: none;color: #fff;width: 70px;height: 30px;border-radius: 4px;" onclick="addBook()">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./baitap2.js"></script>
+</html>

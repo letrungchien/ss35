@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .btn {
+        margin-left: 200px;
+    }
+
+    th,
+    td {
+        border: 1px solid black;
+        padding: 15px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .th1 {
+        background-color: #f2f2f2;
+    }
+
+    .btn1 {
+        background-color: #fff;
+        border: 1px solid blueviolet;
+        color: blueviolet;
+        height: 30px;
+        width: 80px;
+        border-radius: 5px;
+    }
+
+    .btn2 {
+        background-color: #fff;
+        border: 1px solid blueviolet;
+        color: blueviolet;
+        height: 30px;
+        width: 30px;
+        border-radius: 5px;
+    }
+
+    .btn3 {
+        background-color: #fff;
+        border: 1px solid blueviolet;
+        color: blueviolet;
+        height: 30px;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <div>
+        <div>
+            <table border="1" cellspacing="0" cellpadding="10">
+                <thead>'
+                    <tr>
+                        <th>tên nhân viên <input id="name" type="text"></th>
+                        <th>chức vụ <input id="position" type="text"></th>
+                    </tr>
+                </thead>
+            </table>
+            <button class="btn" onclick="add()">thêm nhân viên</button>
+        </div>
+        <div>
+            <table border="1" cellspacing="0" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th class="th1" style="width: 50px;">STT</th>
+                        <th class="th1" style="width: 180px;">Tên</th>
+                        <th class="th1" style="width: 240px;">Chức vụ</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+            <p class="pages">
+                
+            </p>
+        </div>
+    </div>
+
+</body>
+<script src="./baitap4.js"></script>
+
+</html>
